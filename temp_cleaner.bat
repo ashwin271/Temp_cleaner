@@ -1,12 +1,12 @@
 @echo off
 echo.
-echo Deleting users temp files...
+echo Cleaning users temp files...
 del C:\Users\%username%\AppData\Local\temp\*.* /f /s /q
 timeout /t 2
 cls
 
 echo.
-echo Deleting system temp files...
+echo Cleaning system temp files...
 del C:\Windows\Temp\*.* /f /s /q
 timeout /t 2
 cls
@@ -19,7 +19,7 @@ goto :ext
 
 :clean_prefetch
 echo.
-echo Deleting files from prefetch...
+echo Cleaning files from prefetch...
 del C:\Windows\Prefetch\*.* /f /s /q
 
 :ext
